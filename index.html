@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理後台連結</title>
+    <style>
+        /* 基礎樣式重設 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* 容器樣式 */
+        .container {
+            width: 100%;
+            max-width: 480px;
+            padding: 40px 20px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        /* 按鈕群組與響應式按鈕樣式 */
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .btn {
+            display: block;
+            padding: 16px 24px;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #ffffff;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        /* 各別按鈕顏色設計 */
+        .btn-primary {
+            background-color: #4f46e5; /* 靛藍色 */
+        }
+        .btn-primary:hover {
+            background-color: #4338ca;
+            transform: translateY(-2px);
+        }
+
+        .btn-success {
+            background-color: #10b981; /* 翡翠綠 */
+        }
+        .btn-success:hover {
+            background-color: #059669;
+            transform: translateY(-2px);
+        }
+
+        .btn-info {
+            background-color: #0ea5e9; /* 天藍色 */
+        }
+        .btn-info:hover {
+            background-color: #0284c7;
+            transform: translateY(-2px);
+        }
+
+        /* 針對大螢幕的微調（RWD） */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 550px;
+                padding: 50px 40px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .btn {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>系統管理選單</h1>
+        
+        <div class="button-group">
+            <a href="https://simply201051.app.n8n.cloud/form/502de757-37f2-4c5d-a468-45b1527897d8" target="_blank" class="btn btn-primary">
+                設定公休日
+            </a>
+            
+            <a href="https://docs.google.com/spreadsheets/d/1wu5g_OsrFBqSQjdpdIT5AWnk-F0SeIt5gmjQzzb3p7s/edit?usp=drive_link" target="_blank" class="btn btn-success">
+                資料表
+            </a>
+            
+            <a href="https://simply201051.github.io/n8n/off_days_viewer.html" target="_blank" class="btn btn-info">
+                檢視
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
